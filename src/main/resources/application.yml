@@ -1,0 +1,27 @@
+photopath: G:\\Java\\IdeaProjects\\xiaolianqiang\\src\\main\\resources\\static\\images\\photo\\
+photourl: http://192.168.1.56:8081/images/photo/
+foregroundpath: G:\\Java\\IdeaProjects\\xiaolianqiang\\src\\main\\resources\\static\\images\\foreground\\
+foregroundurl: http://192.168.1.56:8081/images/foreground/
+templatepath: G:\\Java\\IdeaProjects\\xiaolianqiang\\src\\main\\resources\\static\\images\\template\\
+templateurl: http://192.168.1.56:8081/images/template/
+spring:
+  datasource:
+    username: root
+    password: root
+    url: jdbc:mysql://localhost:3306/wenjian?useUnicode=true&characterEncoding=utf-8&useSSL=true&serverTimezone=UTC
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  mvc:
+    view:
+      prefix: /
+      suffix: .html
+    static-path-pattern: /**
+  #图片最大限制
+  servlet:
+    multipart:
+      max-file-size: 50MB
+      max-request-size: 100MB
+      enabled: true
+server:
+  port: 8081
+
+

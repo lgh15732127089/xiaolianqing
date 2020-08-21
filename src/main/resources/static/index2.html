@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div align="center" style="width: 100%;">
+    <img src="/images/img.png">
+</div>
+<div align="center" style="width: 100%;">
+    <button onclick="get();">getText</button>
+</div>
+<script type="text/javascript" src="../static/jquery.min.js"></script>
+<script type="text/javascript">
+    function  get() {
+        var url = "parse";
+        $.get(url,function(data){
+            alert(data.text);
+        });
+    }
+</script>
+</body>
+</html>
